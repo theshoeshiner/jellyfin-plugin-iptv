@@ -1,0 +1,12 @@
+{
+    "category": "Live TV",
+    "changelog": "https://github.com/theshoeshiner/jellyfin-plugin-iptv/raw/main/CHANGELOG.md",
+    "description": "TODO",
+    "guid": "4e447dd6-5725-44a5-ac9c-d23e23f6343e",
+    "name": "Iptv",
+    "overview": "TODO",
+    "owner": "theshoeshiner",
+    "targetAbi": "10.10.0.0",
+    "timestamp": "2025-03-05T13:54:00Z",
+    "version": "0.1.0.0"
+}
