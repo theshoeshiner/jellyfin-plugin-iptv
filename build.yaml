@@ -1,0 +1,13 @@
+---
+name: "Iptv"
+guid: "4e447dd6-5725-44a5-ac9c-d23e23f6343e"
+version: "0.1.0.0"
+targetAbi: "10.10.0.0"
+framework: "net8.0"
+overview: "TODO"
+description: "TODO"
+category: "Metadata"
+owner: "theshoeshiner"
+artifacts:
+- "Jellyfin.Plugin.Iptv.dll"
+changelog: "https://github.com/theshoeshiner/jellyfin-plugin-iptv/raw/main/CHANGELOG.md"
