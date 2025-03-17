@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Jellyfin.Plugin.Iptv</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Nullable>enable</Nullable>
+    <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+    <CodeAnalysisRuleSet>../jellyfin.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1591;SA1505;CA1305</NoWarn>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;1591;SA1505;CA1305</NoWarn>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Jellyfin.Controller" Version="10.10.6" />
+    <PackageReference Include="Jellyfin.Model" Version="10.10.6" />
+
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SerilogAnalyzer" Version="0.15.0" PrivateAssets="All" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.507" PrivateAssets="All" />
+    <PackageReference Include="SmartAnalyzers.MultithreadingAnalyzer" Version="1.1.31" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Configuration\Web\**" />
+    <EmbeddedResource Include="Configuration\Web\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controller\" />
+  </ItemGroup>
+
+  <ItemGroup>
+  <EmbeddedResource Include="Embedded\epg.exe" />
+</ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Jellyfin.LiveTv">
+      <HintPath>..\..\..\git\jellyfin\src\Jellyfin.LiveTv\bin\Debug\net8.0\Jellyfin.LiveTv.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+<!--
+  <ItemGroup>
+    <Reference Include="Jellyfin.Server.Implementations">
+      <HintPath>..\..\..\git\jellyfin\Jellyfin.Server\bin\Release\net7.0\Jellyfin.Server.Implementations.dll</HintPath>
+    </Reference>
+    <Reference Include="Jellyfin.Server">
+      <HintPath>..\..\..\git\jellyfin\Jellyfin.Server\bin\Release\net7.0\Jellyfin.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+-->
+</Project>

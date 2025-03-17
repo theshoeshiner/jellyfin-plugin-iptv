@@ -1,0 +1,99 @@
+<div id="IptvPage" data-role="page" class="page type-interior pluginConfigurationPage withTabs"
+     data-require="emby-input,emby-button" data-controller="__plugin/IptvChannels.js">
+    <div data-role="content">
+        <div class="content-primary">
+
+          <!--  <div class="sectionTitleContainer flex align-items-center">
+                <h2 class="sectionTitle">Select Channels</h2>
+            </div>
+-->
+            <p>
+                Use the filters to find channels and select / unselect them using the button on each row.
+            </p>
+            <br />
+            <div class="inputContainer">
+                <div id="channels-table-container" style="">
+                    <table class="channels detailTable" id="channels-table">
+                        <thead>
+
+                            <tr>
+                                <th class="detailTableBodyCell detailTableHeaderCell added">Added</th>
+                                <th class="detailTableBodyCell detailTableHeaderCell stream">Stream</th>
+                                <th class="detailTableBodyCell detailTableHeaderCell guide">Guide</th>
+                                <th class="detailTableBodyCell detailTableHeaderCell network">Network</th>
+                                <th class="detailTableBodyCell detailTableHeaderCell name">Name</th>
+                                <th class="detailTableBodyCell detailTableHeaderCell categories">Categories</th>
+                                <th class="detailTableBodyCell detailTableHeaderCell country">Country</th>
+                                <th class="detailTableBodyCell detailTableHeaderCell region">Region</th>
+                                <th class="detailTableBodyCell detailTableHeaderCell languages">Languages</th>
+                            </tr>
+
+                            <tr>
+                                <th class="detailTableBodyCell detailTableHeaderCell added"><input autocomplete="off" id="added-filter" type="checkbox"></th>
+                                <th class="detailTableBodyCell detailTableHeaderCell stream"><input autocomplete="off" id="stream-filter" type="checkbox"></th>
+                                <th class="detailTableBodyCell detailTableHeaderCell guide"><input autocomplete="off" id="guide-filter" type="checkbox"></th>
+                                <th class="detailTableBodyCell detailTableHeaderCell network"><input autocomplete="off" id="network-filter"></th>
+                                <th class="detailTableBodyCell detailTableHeaderCell name"><input autocomplete="off" id="name-filter"></th>
+                                <th class="detailTableBodyCell detailTableHeaderCell categories"><input autocomplete="off" id="category-filter"></th>
+                                <th class="detailTableBodyCell detailTableHeaderCell country"><input autocomplete="off" id="country-filter"></th>
+                                <th class="detailTableBodyCell detailTableHeaderCell region"><input autocomplete="off" id="region-filter"></th>
+                                <th class="detailTableBodyCell detailTableHeaderCell languages"><input autocomplete="off" id="language-filter"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="channels-table-body">
+                        </tbody>
+                    </table>
+                    <div id="table-details">
+                        <span id="page-details"></span>
+                        <span class="page-buttons">
+                            <button id="prev-page" is="emby-button" class="raised emby-button">
+                                <span>Prev</span>
+                            </button>
+                            <button id="next-page" is="emby-button" class="raised emby-button">
+                                <span>Next</span>
+                            </button>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+
+          <!--  <form id="IptvChannelsForm">
+
+                <div class="inputContainer">
+                    <div style="display: flex; align-items: center;">
+                        <div style="flex-grow:1;">
+                            <label class="inputLabel inputLabelUnfocused" for="Categories">Categories</label>
+                            <input is="emby-input" autocomplete="off" id="Categories">
+                        </div>
+                    </div>
+                    <div class="fieldDescription">Comma separated list of categories</div>
+                </div>
+                <div class="inputContainer">
+                    <div style="display: flex; align-items: center;">
+                        <div style="flex-grow:1;">
+                            <label class="inputLabel inputLabelUnfocused" for="Countries">Countries</label>
+                            <input is="emby-input" autocomplete="off" id="Countries">
+                        </div>
+                    </div>
+                    <div class="fieldDescription">Comma separated list of countries</div>
+                </div>
+                <div class="inputContainer">
+                    <div style="display: flex; align-items: center;">
+                        <div style="flex-grow:1;">
+                            <label class="inputLabel inputLabelUnfocused" for="Languages">Languages</label>
+                            <input is="emby-input" autocomplete="off" id="Languages">
+                        </div>
+                    </div>
+                    <div class="fieldDescription">Comma separated list of languages</div>
+                </div>
+
+                <div>
+                    <button is="emby-button" type="submit" class="raised button-submit block emby-button">
+                        <span>Save</span>
+                    </button>
+                </div>
+            </form>-->
+        </div>
+    </div>
+</div>
