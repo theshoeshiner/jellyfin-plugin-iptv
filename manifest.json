@@ -7,6 +7,14 @@
         "overview": "Allows users to take advantage of the IPTV database.",
         "imageUrl": "https://raw.githubusercontent.com/theshoeshiner/jellyfin-plugin-iptv/main/logo.png",
         "versions": [
+			{
+                "version": "0.2.1.0",
+                "targetAbi": "10.10.0.0",
+                "changelog": "Bug fixes",
+                "checksum": "b53dfaf6110e32a325edbbc5064f9ccc",
+                "sourceUrl": "https://github.com/theshoeshiner/jellyfin-plugin-iptv/releases/download/0.2.1.0/jellyfin-iptv_0.2.1.0.zip",
+                "timestamp": "2023-06-21T00:00:00Z"
+            },
             {
                 "version": "0.2.0.0",
                 "targetAbi": "10.10.0.0",
